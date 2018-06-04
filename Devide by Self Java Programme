@@ -1,0 +1,23 @@
+public class Test {
+
+   public static void main(String args[]) {
+    int r,t,y;
+    int n=1562;
+    
+     y=n;
+     while(y>0)
+     {
+         
+         r=y%10;
+         
+         if(n%r==0)
+         {
+         System.out.println(+n+" :Divided by: "+r);
+         }
+         else
+         System.out.println(+n+" :Not Divided by: "+r);
+         y=y/10;
+     }
+      
+   }
+}
