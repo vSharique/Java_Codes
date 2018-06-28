@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class RemoveSpace {
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter String with space");
+		String str = sc.nextLine();
+		char[] strArray = str.toCharArray();
+		StringBuffer sB = new StringBuffer();
+		for(int i=0;i<strArray.length;i++)
+		{
+			if((strArray[i] != ' ') && (strArray[i] !='\t'))
+			{
+				sB.append(strArray[i]);
+			}
+		}
+		String str1=sB.toString();
+		System.out.println("After Removing Space");
+		System.out.println(str1);
+	}
+
+}
